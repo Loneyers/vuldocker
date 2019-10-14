@@ -1,0 +1,16 @@
+{
+  "name": "nextjs-docker",
+  "version": "1.0.0",
+  "description": "Next.js 2.4 docker",
+  "author": "Loneyer",
+  "scripts": {
+    "dev": "next",
+    "start": "next start",
+    "build": "next build"
+  },
+  "dependencies": {
+    "next": "^2.4.0",
+    "react": "^16.10.2",
+    "react-dom": "^16.10.2"
+  }
+}
